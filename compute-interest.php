@@ -27,10 +27,11 @@
 
 	<p>
 		<em>Last update:</em> <?php echo date('m/d/Y h:i:s a', time());
-		echo "thanh luan" ;?>
+		?>
 	</p>
 
 	<?php
+	echo "thanh luan" ;
 		if (isset($_POST['month']) && isset($_POST['deposit']))
 		{
 			$url = "http://207.148.79.221:8080/iBanking/rest/services/compute-interest/" . $_POST['month'] . "/" . $_POST['deposit'];
