@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+  <style>
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="font-size:125%;font-family:Arial, Helvetica, sans-serif;">
+  <h1>Sign-in</h1>
+
+  <form action="http://207.148.79.221:8080/iBanking/rest/services/sign-in-secure/" method="post">
+    <p>
+      Username : <input type="text" name="username" required />
+    </p>
+
+    <p>
+      Password : <input type="password" name="password" required />
+    </p>
+
+    <input type="submit" class="button" value="Sign In" />
+  </form>
+
+</body>
+</html>
