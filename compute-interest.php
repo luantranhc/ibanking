@@ -32,7 +32,6 @@
 	<?php
 		if (isset($_POST['month']) && isset($_POST['deposit']))
 		{
-			echo " thanh luan " ;
 			$url = "http://207.148.79.221:8080/iBanking/rest/services/compute-interest/" . $_POST['month'] . "/" . $_POST['deposit'];
 
 			//Initialize cURL.
